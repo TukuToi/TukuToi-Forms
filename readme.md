@@ -1,13 +1,3 @@
-=== Plugin Name ===
-Contributors: beda.s
-Donate link: https://www.tukutoi.com/
-Tags: comments, spam
-Requires at least: 5.7
-Tested up to: 5.7
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
 Install like any WP Plugin
 
 Insert in any page a shortcode like `[tkt_post_form roles_allowlist="administrator" edit_mode="true" edit_others="false" no_access_message="NO!"]` and then call the page with URL paramters `/?post_id=88` where 88 is a post to edit, or use shortcde with no `edit_mode="true"` and call Page with `/?type=post` where `post` is the post type to create a new Post.
