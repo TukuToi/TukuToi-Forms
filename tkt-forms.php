@@ -43,7 +43,8 @@ define( 'TKT_FORMS_VERSION', '1.0.0' );
  */
 function activate_tkt_forms() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tkt_forms-activator.php';
-	Tkt_forms_Activator::activate();
+	$activate = new Tkt_forms_Activator;
+	$activate->activate();
 }
 
 /**

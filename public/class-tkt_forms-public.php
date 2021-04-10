@@ -255,6 +255,8 @@ class Tkt_forms_Public {
 
 		$current_user_can_use = $this->current_user_can_use( $roles_allowlist, $edit_mode, $edit_allowrules, $id);
 		
+		
+
 		if( $current_user_can_use == true ){
 
 			$this->forms['post_form']->set_formdata( array( 

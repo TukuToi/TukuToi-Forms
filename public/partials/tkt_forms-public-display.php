@@ -40,22 +40,22 @@
                             ?>" />
                         </div>
                     </div>
-					<?php if( get_term( $this->ID )->taxonomy == 'auteur'){ ?>
-						<div class="col-12">
-							<div class="form-group">
-								<label for="siteAuteur"><?php _e( 'Website', 'custom-form' ); ?></label>
-								<input type="text" name="siteAuteur" id="siteAuteur" value="<?php
+                    <?php if( get_term( $this->ID )->taxonomy == 'auteur'){ ?>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="siteAuteur"><?php _e( 'Website', 'custom-form' ); ?></label>
+                                <input type="text" name="siteAuteur" id="siteAuteur" value="<?php
 
-									if ( $this->ID != '' && !isset( $this->data['siteAuteur'] ) ) 
-										echo get_term_meta( $this->ID, 'wpcf-site-auteur', true );//get_term( $this->ID, $this->tax )->name;
-									// "Sticky" field, will keep value from last POST if there were errors
-									if ( isset( $this->data['siteAuteur'] ) )
-										echo esc_attr( $this->data['siteAuteur'] );
+                                    if ( $this->ID != '' && !isset( $this->data['siteAuteur'] ) ) 
+                                        echo get_term_meta( $this->ID, 'wpcf-site-auteur', true );//get_term( $this->ID, $this->tax )->name;
+                                    // "Sticky" field, will keep value from last POST if there were errors
+                                    if ( isset( $this->data['siteAuteur'] ) )
+                                        echo esc_attr( $this->data['siteAuteur'] );
 
-								?>" />
-							</div>
-						</div>
-					<?php }?>
+                                ?>" />
+                            </div>
+                        </div>
+                    <?php }?>
                     <div class="col-12">
                         <div class="form-group">
                             <label for="termDescription"><?php _e( 'Contenu', 'custom-form' ); ?></label>
