@@ -83,11 +83,14 @@ class Tkt_forms {
 		}
 		$this->plugin_name = 'tkt_forms';
 		$this->human_plugin_name = 'TukuToi Forms';
+		$this->tkt_forms_db_version = '1.0';
 
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+
+		
 
 	}
 
@@ -182,6 +185,11 @@ class Tkt_forms {
         
 		$this->loader->add_action( 'init', $this->common, 'load' );
 
+		$this->loader->add_action('wp_ajax_db_save_form_ajax', $plugin_settings, 'db_save_form_ajax');
+		$this->loader->add_action('wp_ajax_db_get_form_ajax', $plugin_settings, 'db_get_form_ajax' );
+		$this->loader->add_action('wp_ajax_db_save_notification_ajax', $plugin_settings, 'db_save_notification_ajax');
+		$this->loader->add_action('wp_ajax_db_get_notification_ajax', $plugin_settings, 'db_get_notification_ajax' );
+		$this->loader->add_action('wp_ajax_db_delete_form_ajax', $plugin_settings, 'db_delete_form_ajax' );
 
 	}
 
@@ -203,8 +211,6 @@ class Tkt_forms {
 		
 		$this->loader->add_action( 'init', $plugin_public, 'register_shortcodes' );
 		$this->loader->add_action( 'plugins_loaded', $plugin_public, 'set_current_user' );
-		
-
 
 	}
 

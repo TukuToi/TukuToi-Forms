@@ -2,3 +2,55 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+ .tkt_forms_actions, .tkt_forms_formtypes{
+ 	width: 61px;
+	height: 61px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 1px #0269ac;
+	border-radius: 3px;
+	margin-right: 6px;
+	cursor: pointer;
+ }
+ .tkt_modal_content .tkt_forms_formtypes{
+ 	min-width: 61px;
+	min-height: 61px;
+ 	width: 219px;
+	height: 219px;
+ }
+ .tkt_forms_actions_wrapper, .tkt_forms_formtypes_wrapper{
+ 	display: flex;
+ }
+ .tkt_forms_formtypes_wrapper{
+ 	width: 100%;
+ 	justify-content: space-around;
+ }
+ #tkt_forms_add_modal .tkt_modal_content{
+ 	display: flex ;
+ 	justify-content: space-around ;
+ 	align-items: center ;
+ }
+ .CodeMirror-sizer{
+ 	padding-left: 18px !important;
+ }
+ .CodeMirror-linenumber{
+ 	left: -30px !important;
+ }
+ fieldset{
+ 	
+ }
+input[type=text], input[type=text]:focus {
+	font-size: 25px;
+	width: 100%;
+ 	border:none;
+ }
+ input[type=text]:focus{
+ 	outline: none;
+ 	box-shadow: 0 0 39px #0269ac;
+ }
+ .tkt_forms_edit_form{
+ 	cursor: pointer;
+ }
+ 

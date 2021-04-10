@@ -134,6 +134,8 @@ class Tkt_Post_Form extends Tkt_Form{
 	 */
 	public function handle_form(){
 
+		error_log( print_r( $_POST, true) );
+
 		//Is the form submitted
 		if ( ! $this->is_form_submitted() )
             return false;
@@ -301,8 +303,8 @@ class Tkt_Post_Form extends Tkt_Form{
 				
 
 	            <?php echo $form_fields; ?>
-	            <button type="submit" name="submit_form"><?php _e( 'Submit Post Form',  $this->plugin_name ); ?></button>
 	            <?php wp_nonce_field( $this->tkt_form_action, $this->tkt_nonce_field ) ?>
+	            <button type="submit" name="submit_form"><?php _e( 'Submit Post Form',  $this->plugin_name ); ?></button>
 			</form>
 		</div>
 			<?php

@@ -80,7 +80,6 @@ class Tkt_forms_Admin {
 
     }
 
-
 	/**
 	 * Register the stylesheets for the admin area.
 	 *
@@ -88,7 +87,7 @@ class Tkt_forms_Admin {
 	 */
 	public function register_styles() {
 
-		wp_register_style( $this->plugin_name . '-styles', plugin_dir_url( __FILE__ ) . 'css/tkt_fasterpress-admin.css', array(), $this->version, 'all' );
+		wp_register_style( $this->plugin_name . '-styles', plugin_dir_url( __FILE__ ) . 'css/tkt_forms-admin.css', array(), $this->version, 'all' );
         wp_register_style( $this->plugin_name . '-select2', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css', array(), $this->version, 'all' );
 
 	}
@@ -100,7 +99,7 @@ class Tkt_forms_Admin {
 	 */
 	public function register_scripts() {
 
-		wp_register_script( $this->plugin_name . '-scripts', plugin_dir_url( __FILE__ ) . 'js/tkt_fasterpress-admin.js', array( 'jquery' ), $this->version, true );
+		wp_register_script( $this->plugin_name . '-scripts', plugin_dir_url( __FILE__ ) . 'js/tkt_forms-admin.js', array( 'jquery' ), $this->version, true );
         wp_register_script( $this->plugin_name . '-select2', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js', array( 'jquery' ), $this->version, true );
 
 	}

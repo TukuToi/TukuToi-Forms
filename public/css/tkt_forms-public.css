@@ -2,25 +2,3 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
-
-/* div#front_end_edit_terms_container, div#front_end_add_edit_posts_container { 
-	padding:25px;
-	background: rgba(128, 128, 128, 0.16);
-}
-div#qt_termDescription_toolbar.quicktags-toolbar, div#qt_postBody_toolbar.quicktags-toolbar {
-	display:none !important;
-}
-#termDescription-html, #termDescription-tmce, #postBody-html, #postBody-tmce, #postExcerpt-tmce, #postExcerpt-html {
-    height: 40px !important;
-}
-#repeatable-fieldset-one{
-	cursor:all-scroll;
-}
-td.tktforms-repeater-repeater_instance-wrapper {
-	border-right: unset;
-}
-td.tktforms-repeater-repeater_delete-wrapper {
-	border-left: unset;
-	vertical-align: middle;
-	text-align: right;
-}*/
